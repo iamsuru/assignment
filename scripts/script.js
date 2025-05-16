@@ -67,4 +67,10 @@ const checkoutItem = () => {
 
 checkoutBtn.addEventListener("click", checkoutItem)
 
+inputItemCount.addEventListener("keydown", event => {
+    if (event.key === "Enter") {
+        checkoutItem()
+    }
+})
+
 renderCounters()
